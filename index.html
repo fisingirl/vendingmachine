@@ -1,14 +1,29 @@
 <!DOCTYPE html>
     <html>
         <head>
-            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3/3/6/css/bootstrap.min.css"
+            <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+            <link rel="stylesheet" href="site.css">            
         </head>
         <body>
             <div class="container">
                 <h1>Vending machine simulation</h1>
+                <div class="col-md-8">
+                </div>
+                <div class="col-md-4">
+                    <h4>
+                        Paid: $
+                        <span id="total"></span>
+                        <br/><br/>
+                        <button class="btn btn-primary" 
+                            onclick="machine.acceptCoin(new Quarter())">
+                            Insert quarter
+                        </button>
+                    </h4>
+                </div>
             </div>
-            <script src="js/bootstrapper.js"></script>
+            <script src="js/coin.js"></script>
             <script src="js/vendingMachine.js"></script>
+            <script src="js/bootstrapper.js"></script>
         </body>
     </html>
 </html>
