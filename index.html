@@ -2,7 +2,7 @@
     <html>
         <head>
             <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-            <link rel="stylesheet" href="site.css">            
+            <link rel="stylesheet" href="site.css">   
         </head>
         <body>
             <div class="container">
@@ -12,7 +12,7 @@
                 <div class="col-md-4">
                     <h4>
                         Paid: $
-                        <span id="total"></span>
+                        <span id="total" data-bind="text: paid"></span>
                         <br/><br/>
                         <button class="btn btn-primary" 
                             onclick="machine.acceptCoin(new Quarter())">
@@ -21,6 +21,7 @@
                     </h4>
                 </div>
             </div>
+            <script src="js/lib/knockout-3.4.2.js"></script>         
             <script src="js/coin.js"></script>
             <script src="js/vendingMachine.js"></script>
             <script src="js/bootstrapper.js"></script>
